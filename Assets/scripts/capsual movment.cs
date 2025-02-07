@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class capsualmovment : MonoBehaviour
 {
    
 
-         private float speed = 10f;
+         public float speed = 10f;
          public Rigidbody rb;
          bool alive = true;
 
@@ -47,8 +47,8 @@ public class capsualmovment : MonoBehaviour
              Invoke("Restart", 5);
          }
 
-         public void Restart()
-         {
-             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-         }
+         //public void Restart()
+        /// {
+         //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // }
 }
